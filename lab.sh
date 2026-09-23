@@ -11,7 +11,6 @@ mkdir claude_monet/pastry_station/oven
 mkdir claude_monet/pastry_station/cold_room
 mkdir claude_monet/hall
 mkdir claude_monet/office
-
 mkdir louis_room
 mkdir empty_boxes
 
@@ -117,7 +116,13 @@ chmod u=rwx,g=,o= empty_boxes
 
 pwd
 ls -lR
+
 git status
+git add .
+git commit -m "Создана начальная структура лабораторной работы"
+
+git remote add origin https://github.com/Mikh08/lab0.git
+git push -u origin master
 
 cp louis_room/louis_diary claude_monet/office/confectioner_report
 cp -r claude_monet/hall claude_monet/pastry_station/hall_backup
